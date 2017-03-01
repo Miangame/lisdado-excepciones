@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class MiScanner {
 	private Scanner scanner;
-	static MiScanner miScanner;
+	private static MiScanner miScanner;
 
 	private MiScanner() {
 		scanner = new Scanner(System.in);
