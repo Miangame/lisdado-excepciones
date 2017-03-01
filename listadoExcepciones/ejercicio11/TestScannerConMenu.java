@@ -37,19 +37,23 @@ public class TestScannerConMenu {
 			opcion = menu.gestionar();
 			switch (opcion) {
 			case 1:
-				System.out.println(TecladoScanner.leerEntero("Introduzca un entero: "));
+				MiScanner scanner = MiScanner.getScanner();
+				System.out.println(scanner.leerEntero("Introduzca un entero: "));
 				break;
 
 			case 2:
-				System.out.println(TecladoScanner.leerDecimal("Introduzca un decimal: "));
+				MiScanner scanner2 = MiScanner.getScanner();
+				System.out.println(scanner2.leerDecimal("Introduzca un decimal: "));
 				break;
 
 			case 3:
-				System.out.println(TecladoScanner.leerCaracter("Introduzca un caracter: "));
+				MiScanner scanner3 = MiScanner.getScanner();
+				System.out.println(scanner3.leerCaracter("Introduzca un caracter: "));
 				break;
 
 			case 4:
-				System.out.println(TecladoScanner.leerCadena("Introduzca una cadena: "));
+				MiScanner scanner4 = MiScanner.getScanner();
+				System.out.println(scanner4.leerCadena("Introduzca una cadena: "));
 				break;
 
 			default:
